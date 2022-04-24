@@ -1,8 +1,166 @@
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+$surface-0: #202833;
+$text: #fff;
+$em-0: #ffc700;
+
+* {
+	box-sizing: border-box;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	border-collapse: separate;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	background-color: $surface-0;
+	background-image: url(https://app.materialize.pro/images/background_dark.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left;
+	padding: 0 64px;
+}
+
+table {
+	width: 100%;
+	border-spacing: 0;
+}
+
+th,
+td,
+p,
+b,
+strong,
+a,
+button,
+pre,
+em {
+	color: $text;
+	font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 32px;
+}
+
+p {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+th {
+	background-color: $surface-0;
+	border-bottom: 2px solid #68768344;
+}
+
+.logo-materialize {
+	margin: 32px auto 24px;
+}
+
+td {
+	height: auto;
+}
+
+em {
+	font-style: normal;
+	color: $em-0;
+}
+
+.yellow {
+	color: $em-0;
+}
+
+.grey {
+	color: #687683;
+}
+
+.red {
+	color: #f48181;
+}
+
+.blue {
+	color: #03f4dc;
+}
+
+pre {
+	margin-bottom: 24px;
+}
+
+.blob {
+	padding-bottom: 32px;
+
+	pre,
+	& > div,
+	& > table {
+		display: inline-table;
+		padding: 12px 16px;
+		background-color: #f5f5f51a;
+		border-radius: 12px;
+		font-size: 16px;
+		line-height: 18px;
+	}
+}
+
+.tfoot,
+.tbody {
+	tr:first-child td {
+		padding-top: 32px;
+	}
+}
+button {
+	padding: 2px 32px;
+	background-color: #30ada1;
+	font-size: 16px;
+	border-radius: 8px;
+	margin-bottom: 24px;
+
+	& + & {
+		margin-left: 16px;
+	}
+}
+
+.transparent {
+	background-color: #0000;
+	border: 2px solid $text;
+	padding: 0 30px;
+}
+
+h1,
+h2,
+h3 {
+	font-weight: 600;
+	font-size: 28px;
+	margin-bottom: 24px;
+}
+
+.ctnr {
+	&--user {
+		padding-top: 0 !important;
+
+		img {
+			display: inline-block;
+			border-radius: 50%;
+			width: 100%;
+			height: 100%;
+		}
+
+		td {
+			padding: 0 !important;
+			height: 30px;
+		}
+		p {
+			font-size: 14px;
+			line-height: 16px;
+		}
+
+		svg {
+			margin-left: 16px;
+			$s: 12px;
+			height: $s;
+			width: $s;
+		}
+	}
 }
