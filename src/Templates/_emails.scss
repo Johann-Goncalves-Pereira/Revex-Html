@@ -157,3 +157,8 @@ em {
 	background-color: $materialize-grey-alpha;
 	border-radius: 32px;
 }
+
+th,
+td {
+	outline: 1px solid red !important;
+}
