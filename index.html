@@ -1,17 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap"
-      rel="stylesheet"
-    />
-    <script type="module" src="./main.js"></script>
-  </head>
-  <body>
-  </body>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<table class="main-table" align="center">
+			<!--* Table Head -->
+			<thead>
+				<tr>
+					<th class="logo" align="center">
+						<!-- <a href="https://www.materialize.pro"> -->
+						<a href="#">
+							<img
+								src="https://app.materialize.pro/images/logo-materialize-horizontal.svg"
+								alt="Materialize Logo"
+							/>
+						</a>
+					</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<!--* Table Subtitle  -->
+				<tr>
+					<td class="subtitle" align="center">
+						Olá <em>(nome do cliente)</em>, segue seu resumo diário da
+						Materialize.
+					</td>
+				</tr>
+
+				<tr>
+					<td class="ctnr" align="center">
+						<!--* Table Body -->
+						<table class="ctnr__table">
+							<!--* Table Body - Head -->
+							<thead>
+								<tr class="thead">
+									<th>Sala:</th>
+									<th class="thead--big">Nome da sala</th>
+									<th class="thead--space"></th>
+									<th>Total do período:</th>
+									<th class="thead--big">6h18min</th>
+								</tr>
+								<tr>
+									<td colspan="5" class="just-space"></td>
+								</tr>
+							</thead>
+
+							<!--* Table Body - Body  -->
+							<tbody>
+								<tr>
+									<td class="ctnr-into-a-table" align="center" colspan="5">
+										<table class="ctnr-into-a-table__table">
+											<!--* Table Body - Body - Head -->
+											<thead>
+												<tr class="tr-table">
+													<th align="left">
+														Resumo de ontem: <em>03/01/2022</em>
+													</th>
+												</tr>
+											</thead>
+
+											<!--* Table Body - Body - Body -->
+											<tbody>
+												<tr>
+													<td>
+														<!--* Grid Base  -->
+														<table class="grid-base">
+															<!--* Grid Head  -->
+															<thead class="grid-base__header">
+																<tr>
+																	<th width="64px"></th>
+																	<th align="left">ESPECIALISTA</th>
+																	<th align="center">PERÍODOS RESERVADOS</th>
+																	<th align="center">PERMANÊNCIA NA SALA</th>
+																	<th align="center">
+																		TOTAL DE HORAS REALIZADAS
+																	</th>
+																</tr>
+															</thead>
+
+															<!--* Grid Body -->
+															<tbody class="grid-base__body">
+																<tr>
+																	<td align="center" colspan="2">
+																		<table class="user">
+																			<tr>
+																				<td class="user__photo" rowspan="2">
+																					<img
+																						src="https://picsum.photos/200/300"
+																						alt="Photo Specialist"
+																					/>
+																				</td>
+																				<td class="user__name" align="left">
+																					Vanessa Freire
+																				</td>
+																			</tr>
+																			<tr>
+																				<td class="user__type" align="left">
+																					(Product Owner)
+																				</td>
+																			</tr>
+																		</table>
+																	</td>
+																	<td align="center">
+																		<table>
+																			<tr>
+																				<td align="center">09:00 - 11:00</td>
+																			</tr>
+																			<tr>
+																				<td class="space-top" align="center">
+																					11:00 - 13:00
+																				</td>
+																			</tr>
+																		</table>
+																	</td>
+																	<td align="center">
+																		<table>
+																			<tr>
+																				<td align="center">09:00 - 11:00</td>
+																			</tr>
+																			<tr>
+																				<td class="space-top" align="center">
+																					11:00 - 13:00
+																				</td>
+																			</tr>
+																		</table>
+																	</td>
+																	<td class="td--materialize" align="center">
+																		3h:18min
+																	</td>
+																</tr>
+																<tr>
+																	<td class="line" colspan="5"></td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+	<script type="module" src="./main.js"></script>
 </html>

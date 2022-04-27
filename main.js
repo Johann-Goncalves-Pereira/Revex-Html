@@ -1,1 +1,1 @@
-import "./src/_index.scss";
+const styles = import.meta.globEager("./src/**/_index.scss");
